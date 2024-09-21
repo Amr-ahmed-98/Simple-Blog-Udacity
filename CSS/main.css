@@ -1,0 +1,202 @@
+/* Start of public style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.gowun-batang-regular {
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .gowun-batang-bold {
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/* End of public style */
+
+/* Start of Header */
+
+.main-header {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .main-header .filter{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center; 
+    line-height: 1.5;
+  }
+  .main-header .filter h1{
+    font-size: 3rem;
+}
+.main-header .filter p{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  /* End of Header */
+  /* Start of Card Section */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.card-button {
+    padding: 0.5rem 1rem;
+    background-color: gold;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #555;
+}
+
+  /* End of Card Section */
+
+  /* Start article section */
+  .article-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+.article-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.article-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.article-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.article-info span {
+    color: #888;
+    font-style: italic;
+}
+
+.bio {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.social {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.social h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.social-icons img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
